@@ -1,0 +1,8 @@
+---
+
+- name: Install pipx packages
+  community.general.pipx:
+    name: "{{ item }}"
+  ignore_errors: yes
+  with_items:
+    "{{ pipx_packages }}"

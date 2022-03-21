@@ -1,0 +1,4 @@
+---
+
+- name: Create an engine for Docker on MacOS
+  command: docker-machine create --driver virtualbox default

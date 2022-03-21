@@ -1,0 +1,8 @@
+---
+roles:
+  - name: elliotweiser.osx-command-line-tools
+
+collections:
+  - name: community.general
+  - name: geerlingguy.mac
+  - name: ansible.posix

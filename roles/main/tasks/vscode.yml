@@ -1,0 +1,7 @@
+---
+
+# TODO: Add something which ensures path is set here
+- name: Install VSCode extensions
+  shell: code --install-extension {{ item }}
+  with_items:
+    "{{ vscode_extensions }}"

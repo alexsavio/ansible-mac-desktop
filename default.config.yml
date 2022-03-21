@@ -1,0 +1,240 @@
+---
+ansible_user: alexandre
+ansible_group: staff
+
+home_dir: "/Users/{{ lookup('env', 'USER') }}"
+soft_dir: "{{ home_dir }}/software"
+tmp_install_dir: "{{ home_dir }}/tmp"
+projects_dir: "{{ home_dir }}/projects"
+bin_dir: "{{ home_dir }}/bin"
+create_folders:
+  - "{{ soft_dir }}"
+  - "{{ tmp_install_dir }}"
+  - "{{ projects_dir }}"
+  - "{{ bin_dir }}"
+
+rsync_sync_src_dest: []
+
+homeschick_repositories:
+  - { url: "https://github.com/alexsavio/dotfiles.git", branch: "m1" }
+
+homebrew_repos: []
+
+homebrew_cask_packages:
+  - spotify
+  - dropbox
+  - firefox
+  - google-chrome
+  - google-drive
+  - google-cloud-sdk
+  - iterm2
+  - ngrok
+  - slack
+  - telegram
+  - visual-studio-code
+  - vscodium
+  - vlc
+  - zoom
+  - rectangle
+  - anki
+  - font-ubuntu-mono-nerd-font
+  - font-ubuntu-mono
+  - font-jetbrains-mono
+  - font-jetbrains-mono-nerd-font
+  - mactex
+  - lyx
+  - inkscape
+  - meld
+  - iterm2
+  - cyberduck
+  - obsidian
+  - caffeine
+  - megasync
+  - aws-vault
+  - fing
+  - virtualbox
+
+mas_packages: []
+# - 497799835 # xcode
+# - 937984704 # Amphetamine
+# - 441258766 # Magnet
+
+homebrew_packages:
+  - dive
+  - podman
+  - docker
+  - docker-machine
+  - docker-compose
+  - docker-credential-helper
+  - packer
+  - terraform
+  - autoconf
+  - autojump
+  - automake
+  - cloc
+  - enchant
+  - exiftool
+  - fd
+  - fdupes
+  - ffmpeg
+  - freetype
+  - fswatch
+  - gdal
+  - gdbm
+  - goaccess
+  - graphicsmagick
+  - hyperfine
+  - inetutils
+  - jhead
+  - jpeg
+  - jq
+  - lesspipe
+  - libevent
+  - libpng
+  - libtool
+  - libyaml
+  - ncdu
+  - nginx
+  - nvm
+  - ossp-uuid
+  - pandoc
+  - pkg-config
+  - pre-commit
+  - pwgen
+  - pyenv
+  - pyenv-virtualenv
+  - python
+  - pipx
+  - qpdf
+  - rsync
+  - rtmpdump
+  - sd
+  - shellcheck
+  - starship
+  - swig
+  - tree
+  - watch
+  - zsh-completions
+  - autoconf
+  - automake
+  - aws-iam-authenticator
+  - awscli
+  - bfg
+  - coreutils
+  - curl
+  - direnv
+  - dnsmasq
+  - fzf
+  - gnu-time
+  - gpg
+  - htop
+  - imagemagick@6
+  - libtool
+  - libxslt
+  - libyaml
+  - mas
+  - openssl
+  - pkg-config
+  - rcm
+  - readline
+  - redis
+  - sqlite3
+  - tmux
+  - unzip
+  - vim
+  - watchman
+  - xz
+  - zlib
+  - zsh
+  - git
+  - tig
+  - ranger
+  - github/gh/gh
+  - ssh-copy-id
+  - wget
+  - zsh-history-substring-search
+  - pass
+  - yank
+  - calc
+  - procs
+  - bat
+  - bottom
+  - tealdeer
+  - bandwhich
+  - exa
+  - zoxide
+  - grex
+  - git-delta
+  - nodenv
+  - postgresql
+
+pyenv_python_versions:
+  - 3.10.3
+  - 3.9.10
+
+pip_packages:
+  - black
+  - boto
+  - boto3
+  - build
+  - flake8
+  - pdbpp
+  - ipython
+  - lifelogger
+  - pygments
+  - python-language-server
+  - pyyaml
+  - requests
+  - s3cmd
+  - virtualenv
+  - wheel
+  - poetry
+
+pipx_packages:
+  - httpie
+  - csvkit
+  - tsrc
+
+vscode_extensions:
+  - 2gua.rainbow-brackets
+  - 4ops.terraform
+  - alefragnani.Bookmarks
+  - amazonwebservices.aws-toolkit-vscode
+  - arcticicestudio.nord-visual-studio-code
+  - Cameron.vscode-pytest
+  - chenzhe.split-line
+  - chrmarti.regex
+  - dhoeric.ansible-vault
+  - donjayamanne.githistory
+  - DotJoshJohnson.xml
+  - eamodio.gitlens
+  - EditorConfig.EditorConfig
+  - erd0s.terraform-autocomplete
+  - esbenp.prettier-vscode
+  - GitHub.copilot
+  - GitHub.vscode-pull-request-github
+  - googlecloudtools.cloudcode
+  - hashicorp.terraform
+  - lmcarreiro.vscode-smart-column-indenter
+  - ms-azuretools.vscode-docker
+  - ms-python.python
+  - ms-python.vscode-pylance
+  - ms-toolsai.jupyter
+  - ms-toolsai.jupyter-keymap
+  - ms-toolsai.jupyter-renderers
+  - ms-vscode-remote.remote-ssh
+  - ms-vscode-remote.remote-ssh-edit
+  - octref.vetur
+  - oderwat.indent-rainbow
+  - Perkovec.emoji
+  - redhat.vscode-yaml
+  - ritwickdey.LiveServer
+  - rust-lang.rust
+  - sdras.night-owl
+  - sleistner.vscode-fileutils
+  - stuart.unique-window-colors
+  - taniarascia.new-moon-vscode
+  - vscode-icons-team.vscode-icons
+  - wwm.better-align
+  - yzhang.markdown-all-in-one
+  - zhuangtongfa.material-theme

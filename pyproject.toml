@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ansible-mac-desktop"
+version = "0.1.0"
+description = ""
+authors = ["Alexandre Savio <alexsavio@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ansible = "^5.5.0"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.7.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

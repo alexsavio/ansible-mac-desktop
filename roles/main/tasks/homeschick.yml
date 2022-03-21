@@ -1,0 +1,21 @@
+---
+
+- set_fact:
+    homeschick_home: "{{ home_dir }}/.homesick/repos/homeshick"
+
+- name: Clone homeschick
+  git:
+    repo: https://github.com/andsens/homeshick.git
+    dest: "{{ homeschick_home }}"
+
+- name: Clone {{ item.url }} at branch {{ item.branch }} into homeschick
+  git:
+    repo: "{{ item.url }}"
+    dest: "{{ home_dir }}/.homesick/repos/dotfiles"
+    version: "{{ item.branch }}"
+    update: no
+  with_items:
+    "{{ homeschick_repositories }}"
+
+- name: Run homeschick link --force
+  command: "{{ homeschick_home }}/bin/homeshick -f link"
