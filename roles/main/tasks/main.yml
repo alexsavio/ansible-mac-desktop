@@ -15,8 +15,8 @@
 # - include_tasks: homeschick.yml
 #   tags: homeschick
 
-- include_tasks: pyenv.yml
-  tags: pyenv
+# - include_tasks: pyenv.yml
+#   tags: pyenv
 
 # - include_tasks: pipx.yml
 #   tags: pipx

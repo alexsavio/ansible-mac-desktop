@@ -21,38 +21,42 @@ homeschick_repositories:
 homebrew_repos: []
 
 homebrew_cask_packages:
-  - spotify
-  - dropbox
-  - firefox
-  - google-chrome
-  - google-drive
-  - google-cloud-sdk
-  - iterm2
-  - ngrok
-  - slack
-  - telegram
-  - visual-studio-code
-  - vscodium
-  - vlc
-  - zoom
-  - rectangle
   - anki
-  - font-ubuntu-mono-nerd-font
-  - font-ubuntu-mono
+  - aws-vault
+  - caffeine
+  - cyberduck
+  - dropbox
+  - fing
+  - firefox
   - font-jetbrains-mono
   - font-jetbrains-mono-nerd-font
-  - mactex
-  - lyx
+  - font-ubuntu-mono
+  - font-ubuntu-mono-nerd-font
+  - google-chrome
+  - google-cloud-sdk
+  - google-drive
   - inkscape
-  - meld
   - iterm2
-  - cyberduck
-  - obsidian
-  - caffeine
+  - iterm2
+  - keepassxc
+  - lyx
+  - mactex
   - megasync
-  - aws-vault
-  - fing
+  - meld
+  - ngrok
+  - obsidian
+  - rectangle
+  - slack
+  - spotify
+  - telegram
+  - transmission
+  - transmission-remote-gui
+  - tunnelblick
   - virtualbox
+  - visual-studio-code
+  - vlc
+  - vscodium
+  - zoom
 
 mas_packages: []
 # - 497799835 # xcode
@@ -60,113 +64,123 @@ mas_packages: []
 # - 441258766 # Magnet
 
 homebrew_packages:
-  - dive
-  - podman
-  - docker
-  - docker-machine
-  - docker-compose
-  - docker-credential-helper
-  - packer
-  - terraform
+  - ack
+  - autoconf
   - autoconf
   - autojump
   - automake
+  - automake
+  - aws-iam-authenticator
+  - awscli
+  - bandwhich
+  - bat
+  - bfg
+  - bottom
+  - cairo
+  - calc
   - cloc
+  - coreutils
+  - curl
+  - direnv
+  - dive
+  - dnsmasq
+  - docker
+  - docker-compose
+  - docker-credential-helper
+  - docker-machine
   - enchant
+  - exa
   - exiftool
+  - fasd
   - fd
   - fdupes
   - ffmpeg
   - freetype
   - fswatch
+  - fzf
   - gdal
   - gdbm
+  - giflib
+  - git
+  - git-delta
+  - github/gh/gh
+  - gnu-time
   - goaccess
+  - gpg
   - graphicsmagick
+  - grex
+  - htop
   - hyperfine
+  - imagemagick@6
   - inetutils
   - jhead
+  - jpeg
   - jpeg
   - jq
   - lesspipe
   - libevent
+  - libffi
+  - libjpeg
   - libpng
+  - librsvg
+  - libsvg-cairo
   - libtool
+  - libtool
+  - libxslt
   - libyaml
+  - libyaml
+  - mas
   - ncdu
   - nginx
+  - nodenv
   - nvm
+  - openssl
   - ossp-uuid
+  - packer
   - pandoc
+  - pango
+  - pass
+  - pipx
   - pkg-config
+  - pkg-config
+  - podman
+  - postgresql
   - pre-commit
+  - procs
   - pwgen
   - pyenv
   - pyenv-virtualenv
   - python
-  - pipx
   - qpdf
+  - ranger
+  - rcm
+  - readline
+  - redis
   - rsync
   - rtmpdump
   - sd
   - shellcheck
+  - sqlite3
+  - ssh-copy-id
   - starship
   - swig
-  - tree
-  - watch
-  - zsh-completions
-  - autoconf
-  - automake
-  - aws-iam-authenticator
-  - awscli
-  - bfg
-  - coreutils
-  - curl
-  - direnv
-  - dnsmasq
-  - fzf
-  - gnu-time
-  - gpg
-  - htop
-  - imagemagick@6
-  - libtool
-  - libxslt
-  - libyaml
-  - mas
-  - openssl
-  - pkg-config
-  - rcm
-  - readline
-  - redis
-  - sqlite3
+  - tealdeer
+  - terraform
+  - tig
   - tmux
+  - tree
   - unzip
   - vim
+  - watch
   - watchman
-  - xz
-  - zlib
-  - zsh
-  - git
-  - tig
-  - ranger
-  - github/gh/gh
-  - ssh-copy-id
   - wget
-  - zsh-history-substring-search
-  - pass
+  - xz
   - yank
-  - calc
-  - procs
-  - bat
-  - bottom
-  - tealdeer
-  - bandwhich
-  - exa
+  - zlib
   - zoxide
-  - grex
-  - git-delta
-  - nodenv
-  - postgresql
+  - zsh
+  - zsh-completions
+  - zsh-history-substring-search
 
 pyenv_python_versions:
   - 3.10.3
@@ -178,9 +192,10 @@ pip_packages:
   - boto3
   - build
   - flake8
-  - pdbpp
   - ipython
   - lifelogger
+  - pdbpp
+  - poetry
   - pygments
   - python-language-server
   - pyyaml
@@ -188,7 +203,6 @@ pip_packages:
   - s3cmd
   - virtualenv
   - wheel
-  - poetry
 
 pipx_packages:
   - httpie
