@@ -12,9 +12,9 @@ make install-dev
 
 ## Customize
 
-Remember to create a new set of group variables in group_vars.
-You can copy the file in: `group_vars/laptops/m1/vars.yml` and replace
-their values.
+Edit:
+- `default.config.yml` file for packages and data sources you want.
+- `host.yml` with the IP address of your Mac (or set localhost if you plan to run it locally.)
 
 ## Launch
 
