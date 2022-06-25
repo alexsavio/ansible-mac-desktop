@@ -7,7 +7,7 @@ Provisioner for my profesional/personal Mac OS Desktop.
 Activate your Python environment, and then:
 
 ```bash
-make install-dev
+make deps/install-dev
 ```
 
 ## Customize

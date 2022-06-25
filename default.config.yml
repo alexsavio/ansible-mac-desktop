@@ -73,7 +73,6 @@ homebrew_packages:
   - aws-iam-authenticator
   - awscli
   - bandwhich
-  - bat
   - bfg
   - bottom
   - cairo
@@ -89,7 +88,6 @@ homebrew_packages:
   - docker-credential-helper
   - docker-machine
   - enchant
-  - exa
   - exiftool
   - fasd
   - fd
@@ -108,7 +106,6 @@ homebrew_packages:
   - goaccess
   - gpg
   - graphicsmagick
-  - grex
   - htop
   - hyperfine
   - imagemagick@6
@@ -162,7 +159,7 @@ homebrew_packages:
   - shellcheck
   - sqlite3
   - ssh-copy-id
-  - starship
+  - esolitos/ipa/sshpass
   - swig
   - tealdeer
   - terraform
@@ -177,14 +174,26 @@ homebrew_packages:
   - xz
   - yank
   - zlib
-  - zoxide
   - zsh
   - zsh-completions
   - zsh-history-substring-search
 
+cargo_packages:
+  - gitui
+  - git-tidy
+  - starship
+  - grex
+  - exa
+  - bat
+  - broot
+  - termscp
+  - coreutils
+  - watchexec-cli
+  - zoxide
+  - ttdl
+
 pyenv_python_versions:
-  - 3.10.3
-  - 3.9.10
+  - 3.10.4
 
 pip_packages:
   - black

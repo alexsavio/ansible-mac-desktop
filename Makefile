@@ -1,5 +1,3 @@
-version := $(shell python -c 'import version; print(version.__version__)')
-
 deps/pre::
 	python -m pip install -U pip setuptools poetry
 
@@ -30,18 +28,5 @@ clean-ansible:
 	rm -fr playbook.retry
 	rm -fr .ansible_cache/
 
-version:
-	@echo v$(version)
-
-tag:
-	@echo "Create git tag v$(version), if not present"
-	git rev-parse --verify v$(version) || (git tag v$(version) && git push --tags)
-
-release::
-	semantic-release version
-
-release::
-	poetry version v$(version)
-
-release::
-	semantic-release publish
+ansible/playbook::
+	ansible-playbook playbook.yml

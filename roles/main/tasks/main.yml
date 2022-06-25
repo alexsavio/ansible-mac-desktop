@@ -26,3 +26,6 @@
 
 # - include_tasks: rsync.yml
 #   tags: rsync
+
+- include_tasks: rust.yml
+  tags: rust
