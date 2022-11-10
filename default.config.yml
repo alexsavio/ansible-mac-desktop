@@ -76,7 +76,6 @@ homebrew_packages:
   - bfg
   - bottom
   - cairo
-  - calc
   - cloc
   - coreutils
   - curl
@@ -90,7 +89,6 @@ homebrew_packages:
   - enchant
   - exiftool
   - fasd
-  - fd
   - fdupes
   - ffmpeg
   - freetype
@@ -143,7 +141,6 @@ homebrew_packages:
   - podman
   - postgresql
   - pre-commit
-  - procs
   - pwgen
   - pyenv
   - pyenv-virtualenv
@@ -153,9 +150,9 @@ homebrew_packages:
   - rcm
   - readline
   - redis
+  - ripsecrets
   - rsync
   - rtmpdump
-  - sd
   - shellcheck
   - sqlite3
   - ssh-copy-id
@@ -165,6 +162,7 @@ homebrew_packages:
   - terraform
   - tig
   - tmux
+  - topgrade
   - tree
   - unzip
   - vim
@@ -179,21 +177,34 @@ homebrew_packages:
   - zsh-history-substring-search
 
 cargo_packages:
-  - gitui
-  - git-tidy
-  - starship
-  - grex
-  - exa
+  - bandwhich
   - bat
   - broot
-  - termscp
+  - calc
   - coreutils
+  - exa
+  - git-tidy
+  - gitui
+  - grex
+  - starship
+  - tealdeer
+  - termscp
+  - ttdl
   - watchexec-cli
   - zoxide
-  - ttdl
+  - rm-improved
+  - xcp
+  - du-dust
+  - ripgrep
+  - fd-find
+  - sd
+  - procs
+  - tokei
+  - xh
+  - monolith
 
 pyenv_python_versions:
-  - 3.10.4
+  - 3.10.8
 
 pip_packages:
   - black
