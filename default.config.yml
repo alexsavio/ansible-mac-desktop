@@ -65,6 +65,7 @@ mas_packages: []
 
 homebrew_packages:
   - ack
+  - asdf
   - autoconf
   - autoconf
   - autojump
@@ -272,3 +273,9 @@ vscode_extensions:
   - wwm.better-align
   - yzhang.markdown-all-in-one
   - zhuangtongfa.material-theme
+
+asdf_plugins:
+  - python
+  - direnv
+  - nodejs https://github.com/asdf-vm/asdf-nodejs.git
+  - poetry https://github.com/asdf-community/asdf-poetry.git

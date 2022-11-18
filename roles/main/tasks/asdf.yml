@@ -1,0 +1,14 @@
+---
+
+- name: Install asdf plugins
+  shell: asdf plugin add {{ item }}
+  with_items:
+    "{{ asdf_plugins }}"
+
+# asdf_plugins:
+#  - python
+#  9928  asdf direnv setup --version system
+#  9929  asdf direnv local python 3.10.8
+
+# - set_fact:
+#     has_direnv_plugin: direnv in "{{ asdf_plugins }}"

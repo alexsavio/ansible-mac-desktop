@@ -29,3 +29,6 @@
 
 - include_tasks: rust.yml
   tags: rust
+
+- include_tasks: asdf.yml
+  tags: asdf
