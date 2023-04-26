@@ -1,8 +1,8 @@
 ---
-ansible_user: alexandre
+ansible_user: "{{ lookup('env', 'USER') }}"
 ansible_group: staff
 
-home_dir: "/Users/{{ lookup('env', 'USER') }}"
+home_dir: "/Users/{{ ansible_user }}"
 soft_dir: "{{ home_dir }}/software"
 tmp_install_dir: "{{ home_dir }}/tmp"
 projects_dir: "{{ home_dir }}/projects"
@@ -88,6 +88,7 @@ homebrew_packages:
   - docker-credential-helper
   - docker-machine
   - enchant
+  - entr
   - exiftool
   - fasd
   - fdupes
@@ -159,6 +160,7 @@ homebrew_packages:
   - ssh-copy-id
   - esolitos/ipa/sshpass
   - swig
+  - tcl-tk
   - tealdeer
   - terraform
   - tig
@@ -203,6 +205,11 @@ cargo_packages:
   - tokei
   - xh
   - monolith
+  - bdt
+  - just
+  - pyflow
+  - pylyzer
+  - --git https://github.com/timvw/qv --tag v0.6.0
 
 pyenv_python_versions:
   - 3.10.8

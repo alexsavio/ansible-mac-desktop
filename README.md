@@ -24,5 +24,11 @@ the Makefile downloads the .deb file and unpacks it into your Python environment
 A `playbook` script entry is set in the Pipfile:
 
 ```bash
-ansible-playbook -K --extra-vars '@group_vars/laptops/ma/vars.yml' playbook.yml
+ansible-playbook -K --extra-vars 'default.config.yml' playbook.yml
+```
+
+If you are running it locally, you can use the `local` connection:
+
+```bash
+ansible-playbook -K --extra-vars 'default.config.yml' -c local playbook.yml
 ```
