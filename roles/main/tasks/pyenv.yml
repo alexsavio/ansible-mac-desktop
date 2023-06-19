@@ -1,7 +1,7 @@
 ---
 
 - name: python versions
-  shell: source ~/.zshrc && pyenv install {{ item }}
+  shell: pyenv install {{ item }}
   environment:
     CONFIGURE_OPTS: --enable-optimizations
   loop: '{{ pyenv_python_versions }}'

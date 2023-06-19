@@ -18,15 +18,17 @@ rsync_sync_src_dest: []
 homeschick_repositories:
   - { url: "https://github.com/alexsavio/dotfiles.git", branch: "m1" }
 
-homebrew_repos: []
+homebrew_repos:
+  - homebrew/cask-fonts
 
 homebrew_cask_packages:
-  - anki
+  # - anki
   - aws-vault
   - caffeine
-  - cyberduck
-  - dropbox
-  - fing
+  - cmake
+  # - cyberduck
+  # - dropbox
+  # - fing
   - firefox
   - font-jetbrains-mono
   - font-jetbrains-mono-nerd-font
@@ -35,28 +37,27 @@ homebrew_cask_packages:
   - google-chrome
   - google-cloud-sdk
   - google-drive
-  - inkscape
-  - iterm2
+  # - inkscape
   - iterm2
   - keepassxc
-  - lyx
-  - mactex
-  - megasync
+  # - lyx
+  # - mactex
+  # - megasync
   - meld
   - ngrok
   - obsidian
   - rectangle
-  - slack
-  - spotify
-  - telegram
-  - transmission
-  - transmission-remote-gui
-  - tunnelblick
-  - virtualbox
+  # - slack
+  # - spotify
+  # - telegram
+  # - transmission
+  # - transmission-remote-gui
+  # - tunnelblick
+  # - virtualbox
   - visual-studio-code
   - vlc
-  - vscodium
-  - zoom
+  # - vscodium
+  # - zoom
 
 mas_packages: []
 # - 497799835 # xcode
@@ -67,9 +68,7 @@ homebrew_packages:
   - ack
   - asdf
   - autoconf
-  - autoconf
   - autojump
-  - automake
   - automake
   - aws-iam-authenticator
   - awscli
@@ -122,9 +121,7 @@ homebrew_packages:
   - librsvg
   - libsvg-cairo
   - libtool
-  - libtool
   - libxslt
-  - libyaml
   - libyaml
   - mas
   - ncdu
@@ -180,7 +177,6 @@ homebrew_packages:
   - zsh-history-substring-search
 
 cargo_packages:
-  - bandwhich
   - bat
   - broot
   - calc
@@ -209,10 +205,9 @@ cargo_packages:
   - just
   - pyflow
   - pylyzer
-  - --git https://github.com/timvw/qv --tag v0.6.0
 
 pyenv_python_versions:
-  - 3.10.8
+  - 3.10.12
 
 pip_packages:
   - black
