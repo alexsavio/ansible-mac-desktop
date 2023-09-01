@@ -1,25 +1,28 @@
 ---
 
-# - include_tasks: brew.yml
-#   tags: brew
+- include_tasks: brew.yml
+  tags: brew
 
-# - include_tasks: docker.yml
-#   tags: docker
+## - include_tasks: docker.yml
+##   tags: docker
 
-# - include_tasks: home_folders.yml
-#   tags: home_folders
+- include_tasks: home_folders.yml
+  tags: home_folders
 
-# - include_tasks: zsh.yml
-#   tags: zsh
+- include_tasks: zsh.yml
+  tags: zsh
 
-# - include_tasks: homeschick.yml
-#   tags: homeschick
+- include_tasks: rust.yml
+  tags: rust
 
-# - include_tasks: pyenv.yml
-#   tags: pyenv
+- include_tasks: homeschick.yml
+  tags: homeschick
 
-# - include_tasks: pipx.yml
-#   tags: pipx
+- include_tasks: pyenv.yml
+  tags: pyenv
+
+- include_tasks: pipx.yml
+  tags: pipx
 
 # - include_tasks: vscode.yml
 #   tags: vscode
@@ -27,8 +30,5 @@
 # - include_tasks: rsync.yml
 #   tags: rsync
 
-- include_tasks: rust.yml
-  tags: rust
-
-- include_tasks: asdf.yml
-  tags: asdf
+# - include_tasks: asdf.yml
+#   tags: asdf

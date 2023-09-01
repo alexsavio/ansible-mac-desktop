@@ -15,7 +15,7 @@ deps/install-dev:: deps/pre
 deps/install-dev:: deps/post
 
 deps/install-dev::
-	pre-commit install
+	poetry run pre-commit install
 
 deps/install-ci:: deps/pre
 	poetry install
@@ -28,5 +28,8 @@ clean-ansible:
 	rm -fr playbook.retry
 	rm -fr .ansible_cache/
 
-ansible/playbook::
-	ansible-playbook playbook.yml
+playbook::
+	ansible-playbook playbook.yml -K
+
+playbook/local::
+	ansible-playbook playbook.yml -c local -K
