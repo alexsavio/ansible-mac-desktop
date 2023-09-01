@@ -18,7 +18,8 @@ rsync_sync_src_dest: []
 homeschick_repositories:
   - { url: "https://github.com/alexsavio/dotfiles.git", branch: "m1" }
 
-homebrew_repos: []
+homebrew_repos:
+  - alajmo/mani
 
 homebrew_cask_packages:
   - anki
@@ -127,6 +128,7 @@ homebrew_packages:
   - libyaml
   - libyaml
   - mas
+  - mani
   - ncdu
   - nginx
   - nodenv
@@ -155,6 +157,7 @@ homebrew_packages:
   - ripsecrets
   - rsync
   - rtmpdump
+  - rustdesk
   - shellcheck
   - sqlite3
   - ssh-copy-id
@@ -184,8 +187,14 @@ cargo_packages:
   - bat
   - broot
   - calc
+  # - cloak
+  - clog-cli
   - coreutils
+  - ddh
+  - dtool
   - exa
+  - fblog
+  - fend
   - git-tidy
   - gitui
   - grex
@@ -205,6 +214,7 @@ cargo_packages:
   - tokei
   - xh
   - monolith
+  - nushell
   - bdt
   - just
   - pyflow
