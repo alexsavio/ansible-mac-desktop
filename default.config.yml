@@ -186,14 +186,20 @@ cargo_packages:
   # - cloak
   - clog-cli
   - coreutils
+  - diskonaut
   - ddh
+  - drill
   - dtool
   - exa
   - fblog
   - fend
+  - git-cliff
+  - git-journal
   - git-tidy
   - gitui
   - grex
+  - kalker
+  - lsd
   - starship
   - tealdeer
   - termscp
