@@ -87,6 +87,7 @@ homebrew_packages:
   - docker-compose
   - docker-credential-helper
   - docker-machine
+  - doggo
   - enchant
   - entr
   - exiftool
@@ -200,6 +201,7 @@ cargo_packages:
   - grex
   - kalker
   - lsd
+  - rumdl
   - starship
   - tealdeer
   - termscp
@@ -212,7 +214,10 @@ cargo_packages:
   - ripgrep
   - fd-find
   - sd
+  - oxker
+  - pumas
   - procs
+  - teller
   - tokei
   - xh
   - monolith
